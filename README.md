@@ -18,6 +18,21 @@ Local Roblox decompiler package built around `saveinstance.lua` and a local HTTP
 
 This release is meant to be used as-is. No source code is required.
 
+## Credits
+
+This package is a modified distribution built on top of these projects:
+
+- `saveinstance.lua` is based on [luau/UniversalSynSaveInstance](https://github.com/luau/UniversalSynSaveInstance)
+- the decompiler backend is based on [shrimp-nz/medal](https://github.com/shrimp-nz/medal)
+
+I do not claim authorship of the original projects. This package only adapts and redistributes a modified build for local use.
+
+USSI credit string required by the original project license:
+
+```text
+UniversalSynSaveInstance https://discord.gg/wx4ThpAsmw
+```
+
 ## Included files
 
 - `web-server.exe`
