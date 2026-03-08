@@ -1,5 +1,15 @@
 # Medal Descompiler
-I modified UniversalSynSaveInstance and Medal Decompiler and improved both for greater efficiency.
+I modified UniversalSynSaveInstance and Medal Decompiler, improving both to make them more efficient.
+
+Currently I don’t use a server because I can’t afford to maintain one. If you’d like to support the project, you can donate here:
+https://ko-fi.com/dexz0
+
+Crypto donations are also welcome:
+
+Litecoin (LTC) – Native Network
+Address: ltc1qls0c3742jwedk2qkhe8nf3fddpp6aa7ytam3k2
+
+Any support helps keep the project going. Thank you! 🚀
 ----------------------------------------------------------------------------------------------------
 
 Local Roblox decompiler using `saveinstance.lua` + a local HTTP server.
