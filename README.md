@@ -1,37 +1,20 @@
-# Support Project
-I modified UniversalSynSaveInstance and Medal Decompiler, improving both to make them more efficient.
-
-Currently I don’t use a server because I can’t afford to maintain one. If you’d like to support the project, you can donate here:
-https://ko-fi.com/dexz0
-
-Crypto donations are also welcome:
-
-Litecoin (LTC) – Native Network
-Address: ltc1qls0c3742jwedk2qkhe8nf3fddpp6aa7ytam3k2
-
-Any support helps keep the project going. Thank you! 🚀
-----------------------------------------------------------------------------------------------------
-
 # Medal Descompiler
 
 Local Roblox decompiler package built around `saveinstance.lua` and a local HTTP backend.
 
-This release is meant to be used as-is. No source code is required.
+## Support
 
-## Credits
+This package is maintained as a local-use project.
 
-This package is a modified distribution built on top of these projects:
+I do not currently host a public decompilation server. If you want to support the project, you can donate here:
 
-- `saveinstance.lua` is based on [luau/UniversalSynSaveInstance](https://github.com/luau/UniversalSynSaveInstance)
-- the decompiler backend is based on [shrimp-nz/medal](https://github.com/shrimp-nz/medal)
+<https://ko-fi.com/dexz0>
 
-I do not claim authorship of the original projects. This package only adapts and redistributes a modified build for local use.
+Crypto donations are also welcome:
 
-USSI credit string required by the original project license:
+`Litecoin (LTC) - Native Network`
 
-```text
-UniversalSynSaveInstance https://discord.gg/wx4ThpAsmw
-```
+`ltc1qls0c3742jwedk2qkhe8nf3fddpp6aa7ytam3k2`
 
 ## Included files
 
@@ -70,13 +53,15 @@ MedalDescompiler/
 ```
 
 3. Keep that window open.
-4. In your executor, run:
+4. In your executor, run one of the following:
+
+Load from local file:
 
 ```lua
 loadstring(readfile("saveinstance.lua"))()
 ```
 
-Or, if you prefer loading it from a URL:
+Load from URL:
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dexz00/DzSaveInstance/refs/heads/main/DZSave.lua"))()
@@ -107,7 +92,7 @@ getgenv().USSI_OPTIONS = {
 loadstring(readfile("saveinstance.lua"))()
 ```
 
-You can do the same with `game:HttpGet(...)` if you prefer:
+Or:
 
 ```lua
 getgenv().USSI_OPTIONS = {
@@ -144,7 +129,7 @@ saveinstance({
 })
 ```
 
-Or with `game:HttpGet(...)`:
+Or:
 
 ```lua
 getgenv().USSI_DIRECT_SOURCE_MODE = false
@@ -181,7 +166,7 @@ saveinstance({
 
 ## Backend globals
 
-You can change Medal backend behavior without editing the file:
+You can change backend behavior without editing the file:
 
 ```lua
 getgenv().MedalDecompilerUrl = "http://127.0.0.1:3000/decompile"
@@ -200,7 +185,7 @@ To save server output to a log file:
 
 ### `request failed`
 
-The local server is not running, or the URL is wrong.
+The local server is not running, or the backend URL is wrong.
 
 ### `decompiler subprocess failed`
 
@@ -209,3 +194,18 @@ The local server is not running, or the URL is wrong.
 ### Nothing happens
 
 Your executor is likely missing one of the required functions, especially `getscriptbytecode` or `request`.
+
+## Credits
+
+This package is based on these upstream projects:
+
+- `saveinstance.lua` is based on [luau/UniversalSynSaveInstance](https://github.com/luau/UniversalSynSaveInstance)
+- the decompiler backend is based on [shrimp-nz/medal](https://github.com/shrimp-nz/medal)
+
+I do not claim authorship of the original projects. This package only adapts and redistributes a modified local build.
+
+USSI credit string required by the original project license:
+
+```text
+UniversalSynSaveInstance https://discord.gg/wx4ThpAsmw
+```
